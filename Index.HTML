@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Coordenadas - Google Maps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Coordenadas</h1>
+        <p class="subtitle">Ingresa latitud y longitud para ver la ubicación en Google Maps</p>
+
+        <div class="input-group">
+            <div class="input-field">
+                <label for="latitud">Latitud:</label>
+                <input type="text" id="latitud" placeholder="Ej: -34.6037" value="-34.6037">
+            </div>
+            <div class="input-field">
+                <label for="longitud">Longitud:</label>
+                <input type="text" id="longitud" placeholder="Ej: -58.3816" value="-58.3816">
+            </div>
+        </div>
+
+        <button id="btnBuscar">Buscar en Maps</button>
+        <button id="btnEjemplo">Cargar ejemplo (Buenos Aires)</button>
+
+        <div id="resultado">
+            <p id="coordenadasMostradas"></p>
+        </div>
+
+        <div id="mapaContainer">
+            <iframe id="mapaIframe" 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3284.016757601276!2d-58.3816!3d-34.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1234567890" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="footer">
+            <p>Trabajo Práctico N°1 - Lenguaje 4 - 2026</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
